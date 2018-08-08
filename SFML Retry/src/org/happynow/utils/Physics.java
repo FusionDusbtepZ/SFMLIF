@@ -33,13 +33,11 @@ public class Physics {
 		if(direction > 360) {
 			return 0;
 		} else if(89 >= direction && direction >= 0) { // First Quadrant Vectors
-			System.out.println("Frist Quadrant");
 			// cos(angle)=a/h
 			addedX = (float) (Math.cos(direction) * (double) acceleration);
 			
 			// sin(angle)=o/h
 			addedY = (float) (-1 * Math.sin(direction) * (double) acceleration);
-			System.out.println("("+addedX+", "+addedY+")");
 			
 		} else if(179 >= direction && direction >= 90) { // Second Quadrant Vectors
 			
